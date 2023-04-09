@@ -1,0 +1,12 @@
+*{
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  padding-right: 6px;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow: none;
+}
