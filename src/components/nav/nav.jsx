@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux"
-import { Question } from './style'
+import { Question,Link } from './style'
 import { FaRocketchat } from "react-icons/fa" 
 
  const Nav = () =>{
@@ -7,10 +7,10 @@ import { FaRocketchat } from "react-icons/fa"
   
 
     return(
-        
+
         <div >
             {response.map( question => (
-                <Question> <FaRocketchat />  {question.question}</Question>
+                <Question><Link href={ "#" + question.id }><FaRocketchat />  {question.question}</Link> </Question> 
             )) }
         </div>
     )

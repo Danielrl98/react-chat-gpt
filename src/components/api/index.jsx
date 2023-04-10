@@ -37,7 +37,6 @@ const Api = () => {
         .then((response) => response.json())
         .then((json) => {
           let resultJson = json.choices[0].text;
-
           dispatch({
             type: "obter-resposta",
             payload: {
