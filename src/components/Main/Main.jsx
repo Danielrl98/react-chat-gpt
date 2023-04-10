@@ -1,7 +1,8 @@
 import Api from "../api/index";
 import {  useDispatch } from "react-redux";
 import { ResponseChat } from "../ResponseChat/index";
-import { Container2 } from "./style";
+import { Container, Container2 } from "./style";
+import Nav from "../nav/nav";
 
 function Main() {
  
@@ -10,9 +11,9 @@ function Main() {
   return (
         
         <div className="row" style={{ position: 'relative'}}>
-          <div className="col" style={{ backgroundColor: '#202123',height: '100vh'}}>
-                
-          </div>
+          <Container className="col nav-site">
+            <Nav />
+          </Container>
           <Container2 className="col-9">
             <ResponseChat />
             <Api />
