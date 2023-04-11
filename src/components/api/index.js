@@ -2,9 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useRef } from "react";
 import { InputChat, Container, ButtonChat } from "./style";
 import { FaPaperPlane } from "react-icons/fa";
-
-
-
+import React from "react";
 
 const Api = () => {
 
@@ -74,6 +72,7 @@ const Api = () => {
         placeholder="Faça sua pergunta"
         onKeyPress={(event) => handleKeyPress(event)}
       />
+      <p>teste</p>
       <ButtonChat>
         <FaPaperPlane />
       </ButtonChat>
@@ -81,4 +80,4 @@ const Api = () => {
   );
 };
 
-export default Api;
+export default Api ;
